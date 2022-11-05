@@ -18,10 +18,10 @@
 }
 
 #button {
-    display: flex;
-    margin: 1%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
     margin-left: 2%;
-    align-items: stretch;
     width: 20%;
-    text-align: center;
+   
 }
