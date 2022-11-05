@@ -41,8 +41,44 @@ body {
 #results-details {
     border-color: black;
     font-size: 20px;
-    width: 20%;
-    margin-left: 25%;
-
+    width: 50%;
+    height: 25%;
+    margin-left: 0%;
+    position: absolute;
+    left: 440px;
+    top: 80px;
 }
+
+#twh {
+    margin-left: 2%;
+}
+
+#day-card-1 {
+    position: absolute;
+    left: 400px;
+    top: 320px;
+    border-color: black;
+}
+
+#forecast {
+    position: absolute;
+    left: 400px;
+    top: 275px;
+    font-size: 20px;
+}
+
+#day-card-2 {
+    position: absolute;
+    left: 750px;
+    top: 320px;
+    border-color: black;
+}
+
+#day-card-3 {
+    position: absolute;
+    left: 1050px;
+    top: 320px;
+    border-color: black;
+}
+
 
