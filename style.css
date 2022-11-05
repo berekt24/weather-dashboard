@@ -19,7 +19,7 @@ body {
 #search {
     margin-left: 1%;
     font-size: 20px;
-    width: 25%;
+    width: 22%;
 }
 
 #button {
@@ -27,7 +27,7 @@ body {
     margin: 0 auto;
     margin-top: 1%;
     margin-left: 1%;
-    width: 25%;
+    width: 22%;
    
 }
 
@@ -41,11 +41,11 @@ body {
 #results-details {
     border-color: black;
     font-size: 20px;
-    width: 50%;
+    width: 64%;
     height: 25%;
     margin-left: 0%;
     position: absolute;
-    left: 440px;
+    left: 350px;
     top: 80px;
 }
 
@@ -55,28 +55,42 @@ body {
 
 #day-card-1 {
     position: absolute;
-    left: 400px;
+    left: 350px;
     top: 320px;
     border-color: black;
 }
 
 #forecast {
     position: absolute;
-    left: 400px;
+    left: 350px;
     top: 275px;
     font-size: 20px;
 }
 
 #day-card-2 {
     position: absolute;
-    left: 750px;
+    left: 520px;
     top: 320px;
     border-color: black;
 }
 
 #day-card-3 {
     position: absolute;
-    left: 1050px;
+    left: 690px;
+    top: 320px;
+    border-color: black;
+}
+
+#day-card-4 {
+    position: absolute;
+    left: 860px;
+    top: 320px;
+    border-color: black;
+}
+
+#day-card-5 {
+    position: absolute;
+    left: 1030px;
     top: 320px;
     border-color: black;
 }
