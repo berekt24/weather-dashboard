@@ -48,8 +48,22 @@ body {
     top: 80px;
 }
 
-#twh {
+.temp {
     margin-left: 2%;
+}
+
+.wind {
+    margin-left: 2%;
+}
+
+.humidity {
+    margin-left: 2%;
+}
+
+.icon {
+    margin-left: 2%;
+    height: 10vh;
+    width: 10vh;
 }
 
 #day-card-1 {
