@@ -55,13 +55,21 @@ let weather = {
         }
     }
 for (i=0; i<5; i++) {
-    document.getElementById("day-card-" + (i+1) + " .card-title").innerHTML = weekdays[Checkday(i)];
+    document.querySelector("#day-card-" + (i+1) + " .card-title").innerHTML = weekdays[Checkday(i)];
+}
+
+const storageInput = document.querySelector(" #search");
+const text = document.querySelector( " .list-group-item");
+
+function saveLocalstorage() {
+    localStorage.setItem('textinput', storageInput.textContent)
 }
     
     document.querySelector("#button").addEventListener("click", function () {
         weather.find();
         getDays();
         Checkday();
+        saveLocalstorage();
     })
 
 
