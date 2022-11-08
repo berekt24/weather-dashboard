@@ -48,6 +48,10 @@ body {
     top: 80px;
 }
 
+.city {
+    margin-left: 2%;
+}
+
 .temp {
     margin-left: 2%;
 }
