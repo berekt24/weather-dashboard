@@ -27,18 +27,18 @@ let weather = {
     
     };
     function getDays () {
-        const city = document.getElementById("search");
+        const city = document.getElementById("search").value;
     fetch("https://api.openweathermap.org/data/2.5/forecast?q="+ city +"&units=imperial&appid=af62c7e824f77f1632ecc3bb04889cde")
     .then(response => response.json())
     .then(data =>{
         for(i=0; i<5; i++){
-            document.querySelector(".day" + (i+1) + ".temp-card").innerHTML = "Temp: " + Number(data.list[i].main.temp -75.54).toFixed(1) + "°F";
+            document.querySelector("#day" + (i+1) + ".temp-card").innerHTML = "Temp: " + Number(data.list[i].main.temp -75.54).toFixed(1) + "°F";
         }
         for(i=0; i<5; i++){
-            document.querySelector(".day" + (i+1) + ".wind-card").innerHTML = "Wind speed: " + Number(data.list[i].wind.speed -21.61).toFixed(1) + "km/h";
+            document.querySelector("#day" + (i+1) + ".wind-card").innerHTML = "Wind speed: " + Number(data.list[i].wind.speed -21.61).toFixed(1) + "km/h";
         }
         for(i=0; i<5; i++){
-            document.querySelector(".day" + (i+1) + ".humidity-card").innerHTML = "Humidity: " + Number(data.list[i].main.humidity -86) + "%";
+            document.querySelector("#day" + (i+1) + ".humidity-card").innerHTML = "Humidity: " + Number(data.list[i].main.humidity -86) + "%";
         }
     })
     }
