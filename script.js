@@ -32,35 +32,36 @@ let weather = {
     .then(response => response.json())
     .then(data =>{
         for(i=0; i<5; i++){
-            document.querySelector("#day" + (i+1) + ".temp-card").innerHTML = "Temp: " + Number(data.list[i].main.temp -75.54).toFixed(1) + "°F";
+            document.querySelector("#day-card-" + (i+1) + " .temp-card").innerHTML = "Temp: " + Number(data.list[i].main.temp ,5.54).toFixed(1) + "°F";
         }
         for(i=0; i<5; i++){
-            document.querySelector("#day" + (i+1) + ".wind-card").innerHTML = "Wind speed: " + Number(data.list[i].wind.speed -21.61).toFixed(1) + "km/h";
+            document.querySelector("#day-card-" + (i+1) + " .wind-card").innerHTML = "Wind speed: " + Number(data.list[i].wind.speed ,21.61).toFixed(1) + "km/h";
         }
         for(i=0; i<5; i++){
-            document.querySelector("#day" + (i+1) + ".humidity-card").innerHTML = "Humidity: " + Number(data.list[i].main.humidity -86) + "%";
+            document.querySelector("#day-card-" + (i+1) + " .humidity-card").innerHTML = "Humidity: " + Number(data.list[i].main.humidity ,86) + "%";
         }
     })
     }
 
-    // const days = new Date();
-    // const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const days = new Date();
+    const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     
-    // function Checkday(day){
-    //     if (day +days.getDay() > 6) {
-    //         return day +days.getDay()-7;
-    //     } else {
-    //         return day +days.getDay();
-    //     }
-    //     for (i=0; i<5; i++) {
-    //         document.querySelector
-    //     }
-    // }
-
+    function Checkday(day){
+        if (day +days.getDay() > 6) {
+            return day +days.getDay()-7;
+        } 
+        else {
+            return day +days.getDay();
+        }
+    }
+for (i=0; i<5; i++) {
+    document.getElementById("day-card-" + (i+1) + " .card-title").innerHTML = weekdays[Checkday(i)];
+}
     
     document.querySelector("#button").addEventListener("click", function () {
         weather.find();
         getDays();
+        Checkday();
     })
 
 
